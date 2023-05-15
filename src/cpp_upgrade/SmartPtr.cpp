@@ -1,6 +1,7 @@
 #include <iostream>
 #include <memory>
 #include <thread>
+#include <functional>
 using namespace std;
 
 template <typename T>
@@ -69,6 +70,24 @@ int main(){
     }
 
     std::this_thread::sleep_for(std::chrono::seconds(10));
+
+    /*
+    智能指针的Deletor
+    用lambda表达式来简单处理
+    */
+   unique_ptr<int, function<void (int*)>> ptr1(new int[100], 
+    [](int *p) -> void {
+        cout << "call lambda release int[100]" << endl;
+        delete []p;
+    }
+   );
+
+   unique_ptr<FILE, function<void (FILE*)>> ptr2(fopen("data.txt", "w"), 
+    [](FILE *p) -> void {
+        cout << "call lambda release FILE" << endl;
+        fclose(p);
+    }
+   );
 
     return 0;
 }
