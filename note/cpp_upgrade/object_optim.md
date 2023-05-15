@@ -55,3 +55,36 @@ int main(){
     return 0;
 }
 ```
+
+## 对象优化规则
+
+1. 函数参数传递过程中，对象优先按引用传递，不要按值传递
+
+    ```c++
+    Test* GetObject(Test &t){
+        int val = t.getData();
+        Test tmp(val);
+        return tmp;
+    }
+    ```
+
+2. 函数返回对象的时候应该优先返回一个临时对象，而不是返回一个定义过的对象
+
+    ```c++
+    // 同理Test t = Test(val),此时不会发生新建对象再复制构造这一过程，而是只进行构造
+    Test* GetObject(Test &t){
+        int val = t.getData();
+        return Test(val);
+    }
+    ```
+
+3. 接收返回值是对象的函数调用的时候，优先按初始化的方式接收，不要按赋值的方式接收
+
+    ```c++
+    int main(){
+        Test t1;
+        // 减少一次t2的构造函数与析构
+        Test t2 = GetObject(t1);
+        return 0;
+    }
+    ```
