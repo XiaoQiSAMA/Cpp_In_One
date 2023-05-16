@@ -8,13 +8,13 @@ $\bf前提$：具体需求既有稳定点，又有变化点
 
 定义一系列算法，把它们封装起来，并且使他们可互相替换，该模式使算法可独立于使用它的客户程序而变化。
 
-![策略模式分析](patterns1.png)
+![策略模式分析](../../images/patterns1.png)
 
 $\bf Code$:
 
-![策略模式代码](stategy1.png)
+![策略模式代码](../../images/stategy1.png)
 
-![策略模式代码](stategy1-1.png)
+![策略模式代码](../../images/stategy1-1.png)
 
 ### 日志系统（案例）
 
@@ -28,24 +28,24 @@ $\bf Code$:
 
 定义对象间的一对多（变化）的依赖关系，以便当一个对象（Subject）的状态发生变化时，所以依赖于它的对象都得到通知并自动更新。
 
-![观察者模式分析](stategy2.png)
+![观察者模式分析](../../images/stategy2.png)
 
 $\bf Code$:
 
-![观察者模式代码](stategy2-1.png)
+![观察者模式代码](../../images/stategy2-1.png)
 
-![观察者模式代码](stategy2-2.png)
+![观察者模式代码](../../images/stategy2-2.png)
 
 ## 责任链模式
 
 使多个对象都有机会处理请求，从而避免请求的发送者和接收者之间的耦合关系。（nginx阶段处理）
 
-![责任链模式分析](stategy3.png)
+![责任链模式分析](../../images/stategy3.png)
 
 $\bf Code$:
 
-![chain_of_resp](chain_of_resp.png)
+![chain_of_resp](../../images/chain_of_resp.png)
 
 递归询问链表是否能够处理
 
-![chain_of_resp](stategy3-1.png)
+![chain_of_resp](../../images/stategy3-1.png)

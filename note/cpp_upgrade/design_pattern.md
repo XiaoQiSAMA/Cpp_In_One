@@ -8,11 +8,11 @@
 
 继承与组合
 
-![class_template_diff](class_template.png)
+![class_template_diff](../../images/class_template.png)
 
 > 组合时使用Base类的指针更易扩展
 
-![class_template_diff2](class_template2.png)
+![class_template_diff2](../../images/class_template2.png)
 
 > 继承中的虚函数覆盖
 
