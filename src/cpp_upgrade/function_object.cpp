@@ -74,7 +74,7 @@ class myfunction<RT(AT...)>{
         PFUNC _pfunc;
 };
 
-# if 1
+# if 0
 int main(){
     myfunction<void(string)> func1(hello);
     func1("hello world");   // func1.operator()(args)
@@ -86,7 +86,7 @@ int main(){
 }
 #endif
 
-# if 0
+# if 1
 int main(){
     // 从function的类模板定义处，看到希望用一个函数类型实例化function
     function<void()> func1 = hello1;
