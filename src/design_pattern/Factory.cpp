@@ -5,6 +5,7 @@ using namespace std;
 enum CarType{
     BMW, AUDI
 };
+// 系列产品1
 class Car{
     public:
         Car(string name): _name(name) {}
@@ -29,33 +30,70 @@ class Audi : public Car{
         }
 };
 
+// 系列产品2
+class Light{
+    public:
+        virtual void show() = 0;
+};
+class BMWLight : public Light {
+    public:
+        void show() {
+            cout << "BMW Light" << endl;
+        }
+};
+class AudiLight : public Light {
+    public:
+        void show() {
+            cout << "Audi Light" << endl;
+        }
+};
+
+// 工厂方法 ==> 抽象工厂(产品簇提供产品对象的统一创建)
+class AbstractFactory{
+    public:
+        virtual Car* createCar(string name) = 0;
+        virtual Light* createCarLight() = 0;
+};
 // 工厂方法
 class Factory{
     public:
         virtual Car* createCar(string name) = 0;
+        // virtual Light* createCarLight() = 0;
 };
 // 宝马工厂
-class BMWFactory : public Factory{
+class BMWFactory : public AbstractFactory {
     public:
         Car* createCar(string name){
             return new Bmw(name);
         }
+        Light* createCarLight() {
+            return new BMWLight();
+        }
 };
 
-class AudiFactory : public Factory{
+class AudiFactory : public AbstractFactory {
     public:
         Car* createCar(string name){
             return new Audi(name);
         }
+        Light* createCarLight() {
+            return new AudiLight();
+        }
 };
 
 int main(){
-    unique_ptr<Factory> BMWfactory(new BMWFactory());
-    unique_ptr<Factory> Audifactory(new AudiFactory());
+    // 工厂应负责一整套产品簇，通过抽象工厂接口来实现
+    unique_ptr<AbstractFactory> BMWfactory(new BMWFactory());
+    unique_ptr<AbstractFactory> Audifactory(new AudiFactory());
     unique_ptr<Car> p1(BMWfactory->createCar("X6"));
     unique_ptr<Car> p2(Audifactory->createCar("A8"));
+    unique_ptr<Light> l1(BMWfactory->createCarLight());
+    unique_ptr<Light> l2(Audifactory->createCarLight());
+
     p1->show();
+    l1->show();
     p2->show();
+    l2->show();
 
     return 0;
 }
