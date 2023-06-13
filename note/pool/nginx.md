@@ -8,3 +8,7 @@
    * 内存释放ngx_free函数，直接释放头信息中alloc指向的内存
 
 [PDF_For_Structure](nginx_SourceCode.pdf)
+
+## 源码移植
+
+[code_for_nginx](../../src/pool)
