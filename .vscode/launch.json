@@ -1,0 +1,27 @@
+
+{
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "name": "g++.exe build and debug active file",
+            "type": "cppdbg",
+            "request": "launch",
+            "program": "${fileDirname}\\${fileBasenameNoExtension}.exe",
+            "args": [],
+            "stopAtEntry": false,
+            "cwd": "${workspaceFolder}",
+            "environment": [],
+            "externalConsole": false,  /*此处设置是否使用外部终端，默认为false(使用内置的终端)，如需要可以修改为false*/
+            "MIMode": "gdb",
+            "miDebuggerPath": "D:\\msys2\\mingw64\\bin\\g++.exe",  /*此处设置为你编译器的dbg.exe路径*/
+            "setupCommands": [
+                {
+                    "description": "为 gdb 启用整齐打印",
+                    "text": "-enable-pretty-printing",
+                    "ignoreFailures": true
+                }
+            ],
+            "preLaunchTask": "g++.exe build active file"
+        }
+    ]
+}
