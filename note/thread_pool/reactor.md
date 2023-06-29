@@ -18,14 +18,14 @@ reactor对事件进行网络编程，而非对每一个io进行处理。
 
 ### 单reactor
 
-![单进程reactor-redis](single_reactor.png)
+![单进程reactor-redis](../../images/single_reactor.png)
 
-![单进程reactor-redis-process](single_reactor_process.png)
+![单进程reactor-redis-process](../../images/single_reactor_process.png)
 
 ### 多进程reactor(nginx)
 
 共享内存的进程锁机制来分配io操作
-![多进程reactor-nginx](MProc_reactor.png)
+![多进程reactor-nginx](../../images/MProc_reactor.png)
 
 ### 多线程reactor(memcached)
 

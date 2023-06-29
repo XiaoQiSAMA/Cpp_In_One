@@ -1,6 +1,6 @@
 # muduo网络库剖析
 
-![muduo库具体剖析](muduo.pdf)
+[muduo库具体剖析](muduo.pdf)
 
 ## $\textbf{前置知识}$
 
@@ -17,3 +17,9 @@
 * 异步
   
 陈硕大神原话: 在处理IO的时候，阻塞和非阻塞都是同步IO。只有使用了特殊的API才是异步IO。
+
+### 五种IO模型
+
+### Reactor模型
+
+[Reactor模型](../../note/thread_pool/reactor.md)
