@@ -7,7 +7,7 @@
 
 $\bf{作用:}$ 绑定器 + 二元函数对象 ==> 一元函数对象
 
-[binder code](../../src/cpp_upgrade/binder%26function.cpp)
+[binder code](../../src/cpp_upgrade/binder.cpp)
 
 ## function
 
