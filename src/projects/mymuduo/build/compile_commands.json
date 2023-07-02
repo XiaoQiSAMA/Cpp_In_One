@@ -1,0 +1,12 @@
+[
+{
+  "directory": "/home/xiaoqi/Cpp_In_One/src/projects/mymuduo/build",
+  "command": "/usr/bin/g++  -Dmymuduo_EXPORTS   -g -std=c++11 -g -fPIC   -o CMakeFiles/mymuduo.dir/Timestamp.o -c /home/xiaoqi/Cpp_In_One/src/projects/mymuduo/Timestamp.cc",
+  "file": "/home/xiaoqi/Cpp_In_One/src/projects/mymuduo/Timestamp.cc"
+},
+{
+  "directory": "/home/xiaoqi/Cpp_In_One/src/projects/mymuduo/build",
+  "command": "/usr/bin/g++  -Dmymuduo_EXPORTS   -g -std=c++11 -g -fPIC   -o CMakeFiles/mymuduo.dir/logger.o -c /home/xiaoqi/Cpp_In_One/src/projects/mymuduo/logger.cc",
+  "file": "/home/xiaoqi/Cpp_In_One/src/projects/mymuduo/logger.cc"
+}
+]

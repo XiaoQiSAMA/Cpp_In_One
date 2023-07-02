@@ -23,3 +23,13 @@
 ### Reactor模型
 
 [Reactor模型](../../note/thread_pool/reactor.md)
+
+## 网络编程
+
+基于muduo网络卡开发服务器程序
+
+1. 组合TcpServer对线
+2. 创建EnentLoop事件循环对象的指针
+3. 明确TcpServer构造函数需要什么参数，输出ChatServer的构造函数
+4. 在当前服务器类的构造函数中，注册处理连接的回调函数和处理读写事件的回调函数
+5. 设置合适的服务端线程数量，muduo库会自己分配I/O线程和worker线程

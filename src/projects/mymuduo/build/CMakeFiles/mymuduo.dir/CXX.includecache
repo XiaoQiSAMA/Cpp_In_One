@@ -1,0 +1,36 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/home/xiaoqi/Cpp_In_One/src/projects/mymuduo/Timestamp.cc
+Timestamp.h
+/home/xiaoqi/Cpp_In_One/src/projects/mymuduo/Timestamp.h
+time.h
+-
+
+/home/xiaoqi/Cpp_In_One/src/projects/mymuduo/Timestamp.h
+iostream
+-
+string
+-
+
+/home/xiaoqi/Cpp_In_One/src/projects/mymuduo/logger.cc
+iostream
+-
+logger.h
+/home/xiaoqi/Cpp_In_One/src/projects/mymuduo/logger.h
+Timestamp.h
+/home/xiaoqi/Cpp_In_One/src/projects/mymuduo/Timestamp.h
+
+/home/xiaoqi/Cpp_In_One/src/projects/mymuduo/logger.h
+string
+-
+noncopyable.h
+/home/xiaoqi/Cpp_In_One/src/projects/mymuduo/noncopyable.h
+
+/home/xiaoqi/Cpp_In_One/src/projects/mymuduo/noncopyable.h
+
