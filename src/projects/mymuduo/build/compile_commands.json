@@ -1,6 +1,36 @@
 [
 {
   "directory": "/home/xiaoqi/Cpp_In_One/src/projects/mymuduo/build",
+  "command": "/usr/bin/g++  -Dmymuduo_EXPORTS   -g -std=c++11 -g -fPIC   -o CMakeFiles/mymuduo.dir/Channel.o -c /home/xiaoqi/Cpp_In_One/src/projects/mymuduo/Channel.cc",
+  "file": "/home/xiaoqi/Cpp_In_One/src/projects/mymuduo/Channel.cc"
+},
+{
+  "directory": "/home/xiaoqi/Cpp_In_One/src/projects/mymuduo/build",
+  "command": "/usr/bin/g++  -Dmymuduo_EXPORTS   -g -std=c++11 -g -fPIC   -o CMakeFiles/mymuduo.dir/DefaultPoller.o -c /home/xiaoqi/Cpp_In_One/src/projects/mymuduo/DefaultPoller.cc",
+  "file": "/home/xiaoqi/Cpp_In_One/src/projects/mymuduo/DefaultPoller.cc"
+},
+{
+  "directory": "/home/xiaoqi/Cpp_In_One/src/projects/mymuduo/build",
+  "command": "/usr/bin/g++  -Dmymuduo_EXPORTS   -g -std=c++11 -g -fPIC   -o CMakeFiles/mymuduo.dir/EventLoop.o -c /home/xiaoqi/Cpp_In_One/src/projects/mymuduo/EventLoop.cc",
+  "file": "/home/xiaoqi/Cpp_In_One/src/projects/mymuduo/EventLoop.cc"
+},
+{
+  "directory": "/home/xiaoqi/Cpp_In_One/src/projects/mymuduo/build",
+  "command": "/usr/bin/g++  -Dmymuduo_EXPORTS   -g -std=c++11 -g -fPIC   -o CMakeFiles/mymuduo.dir/InetAddress.o -c /home/xiaoqi/Cpp_In_One/src/projects/mymuduo/InetAddress.cc",
+  "file": "/home/xiaoqi/Cpp_In_One/src/projects/mymuduo/InetAddress.cc"
+},
+{
+  "directory": "/home/xiaoqi/Cpp_In_One/src/projects/mymuduo/build",
+  "command": "/usr/bin/g++  -Dmymuduo_EXPORTS   -g -std=c++11 -g -fPIC   -o CMakeFiles/mymuduo.dir/Poller.o -c /home/xiaoqi/Cpp_In_One/src/projects/mymuduo/Poller.cc",
+  "file": "/home/xiaoqi/Cpp_In_One/src/projects/mymuduo/Poller.cc"
+},
+{
+  "directory": "/home/xiaoqi/Cpp_In_One/src/projects/mymuduo/build",
+  "command": "/usr/bin/g++  -Dmymuduo_EXPORTS   -g -std=c++11 -g -fPIC   -o CMakeFiles/mymuduo.dir/TcpServer.o -c /home/xiaoqi/Cpp_In_One/src/projects/mymuduo/TcpServer.cc",
+  "file": "/home/xiaoqi/Cpp_In_One/src/projects/mymuduo/TcpServer.cc"
+},
+{
+  "directory": "/home/xiaoqi/Cpp_In_One/src/projects/mymuduo/build",
   "command": "/usr/bin/g++  -Dmymuduo_EXPORTS   -g -std=c++11 -g -fPIC   -o CMakeFiles/mymuduo.dir/Timestamp.o -c /home/xiaoqi/Cpp_In_One/src/projects/mymuduo/Timestamp.cc",
   "file": "/home/xiaoqi/Cpp_In_One/src/projects/mymuduo/Timestamp.cc"
 },
