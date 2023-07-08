@@ -5,8 +5,9 @@
 
 #include "noncopyable.h"
 #include "Timestamp.h"
+#include "EventLoop.h"
 
-class EventLoop;
+// class EventLoop;
 /* EventLoop、Channel、Poller之间的关系  <== Reactor模型上对应多路事件分发器
 Channel 理解为通道
 封装了sockfd和其感兴趣的event，如EPOLLIN、EPOLLOUT事件

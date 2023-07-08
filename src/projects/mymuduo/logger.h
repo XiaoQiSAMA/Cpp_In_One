@@ -42,8 +42,8 @@
         snprintf(buf, 1024, logmsgFormat, ##__VA_ARGS__); \
         logger.log(buf); \
     } while (0)
-else
-    LOG_DEBUG(logmsgFormat, ...)
+#else
+    #define LOG_DEBUG(logmsgFormat, ...)
 # endif
 
 // 定义日志级别 INFO  ERROR  FATAL  DEBUG
