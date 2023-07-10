@@ -30,7 +30,7 @@ EPollPoller::~EPollPoller() {
 
 Timestamp EPollPoller::poll(int timeoutMs, ChannelList *activeChannels) {
     // LOG_DEBUG输出日志，否则影响epoll运行效率
-    LOG_INFO("func=%s => fd total count:%d\n", __FUNCTION__, channels_.size());
+    LOG_INFO("func=%s => fd total count:%d \n", __FUNCTION__, (int)channels_.size());
     
     int numEvents = ::epoll_wait(epollfd_, &*events_.begin(), static_cast<int>(events_.size()), timeoutMs);
     int saveErrno = errno;
@@ -59,7 +59,7 @@ void EPollPoller::updateChannel(Channel* channel) {
     LOG_INFO("func=%s => fd=%d events=%d index=%d \n", __FUNCTION__, channel->fd(), channel->events(), index);
 
     // channel未在Poller上注册
-    if (index == kNew || index = kDeleted) {
+    if (index == kNew || index == kDeleted) {
         if (index == kNew) {
             int fd = channel->fd();
             channels_[fd] = channel;
