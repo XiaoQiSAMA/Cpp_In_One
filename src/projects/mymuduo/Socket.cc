@@ -17,11 +17,13 @@ void Socket::bindAddress(const InetAddress &localaddr) {
         LOG_FATAL("bind sockfd:%d fail \n", sockfd_);
     }
 }
+
 void Socket::listen() {
     if (0 != ::listen(sockfd_, 1024)) {
         LOG_FATAL("listen sockfd:%d fail \n", sockfd_);
     }
 }
+
 int Socket::accept(InetAddress *peeraddr) {
     sockaddr_in addr;
     socklen_t len;

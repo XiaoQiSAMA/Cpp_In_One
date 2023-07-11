@@ -1,6 +1,16 @@
 [
 {
   "directory": "/home/sbubuntu/Cpp_In_One/src/projects/mymuduo/build",
+  "command": "/usr/bin/g++  -Dmymuduo_EXPORTS   -g -std=c++11 -g -fPIC   -o CMakeFiles/mymuduo.dir/Acceptor.o -c /home/sbubuntu/Cpp_In_One/src/projects/mymuduo/Acceptor.cc",
+  "file": "/home/sbubuntu/Cpp_In_One/src/projects/mymuduo/Acceptor.cc"
+},
+{
+  "directory": "/home/sbubuntu/Cpp_In_One/src/projects/mymuduo/build",
+  "command": "/usr/bin/g++  -Dmymuduo_EXPORTS   -g -std=c++11 -g -fPIC   -o CMakeFiles/mymuduo.dir/Buffer.o -c /home/sbubuntu/Cpp_In_One/src/projects/mymuduo/Buffer.cc",
+  "file": "/home/sbubuntu/Cpp_In_One/src/projects/mymuduo/Buffer.cc"
+},
+{
+  "directory": "/home/sbubuntu/Cpp_In_One/src/projects/mymuduo/build",
   "command": "/usr/bin/g++  -Dmymuduo_EXPORTS   -g -std=c++11 -g -fPIC   -o CMakeFiles/mymuduo.dir/Channel.o -c /home/sbubuntu/Cpp_In_One/src/projects/mymuduo/Channel.cc",
   "file": "/home/sbubuntu/Cpp_In_One/src/projects/mymuduo/Channel.cc"
 },
@@ -48,6 +58,11 @@
   "directory": "/home/sbubuntu/Cpp_In_One/src/projects/mymuduo/build",
   "command": "/usr/bin/g++  -Dmymuduo_EXPORTS   -g -std=c++11 -g -fPIC   -o CMakeFiles/mymuduo.dir/Socket.o -c /home/sbubuntu/Cpp_In_One/src/projects/mymuduo/Socket.cc",
   "file": "/home/sbubuntu/Cpp_In_One/src/projects/mymuduo/Socket.cc"
+},
+{
+  "directory": "/home/sbubuntu/Cpp_In_One/src/projects/mymuduo/build",
+  "command": "/usr/bin/g++  -Dmymuduo_EXPORTS   -g -std=c++11 -g -fPIC   -o CMakeFiles/mymuduo.dir/TcpConnection.o -c /home/sbubuntu/Cpp_In_One/src/projects/mymuduo/TcpConnection.cc",
+  "file": "/home/sbubuntu/Cpp_In_One/src/projects/mymuduo/TcpConnection.cc"
 },
 {
   "directory": "/home/sbubuntu/Cpp_In_One/src/projects/mymuduo/build",
