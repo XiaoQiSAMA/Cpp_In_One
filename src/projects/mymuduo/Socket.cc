@@ -25,10 +25,14 @@ void Socket::listen() {
 }
 
 int Socket::accept(InetAddress *peeraddr) {
+    /**
+     * 1. accept函数的参数不合法
+     * 2. accept未设置非阻塞
+    */
     sockaddr_in addr;
-    socklen_t len;
+    socklen_t len = sizeof addr;
     bzero(&addr, sizeof addr);
-    int connfd = ::accept(sockfd_, (sockaddr*)&addr, &len);
+    int connfd = ::accept4(sockfd_, (sockaddr*)&addr, &len, SOCK_NONBLOCK | SOCK_CLOEXEC);
     if (connfd >= 0) {
         peeraddr->setSockAddr(addr);
     }
