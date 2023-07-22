@@ -1,0 +1,87 @@
+[
+{
+  "directory": "/home/sbubuntu/Cpp_In_One/build",
+  "command": "/usr/bin/g++  -Dmymuduo_EXPORTS   -g -std=c++11 -g -fPIC   -o CMakeFiles/mymuduo.dir/Acceptor.o -c /home/sbubuntu/Cpp_In_One/src/projects/mymuduo/Acceptor.cc",
+  "file": "/home/sbubuntu/Cpp_In_One/src/projects/mymuduo/Acceptor.cc"
+},
+{
+  "directory": "/home/sbubuntu/Cpp_In_One/build",
+  "command": "/usr/bin/g++  -Dmymuduo_EXPORTS   -g -std=c++11 -g -fPIC   -o CMakeFiles/mymuduo.dir/Buffer.o -c /home/sbubuntu/Cpp_In_One/src/projects/mymuduo/Buffer.cc",
+  "file": "/home/sbubuntu/Cpp_In_One/src/projects/mymuduo/Buffer.cc"
+},
+{
+  "directory": "/home/sbubuntu/Cpp_In_One/build",
+  "command": "/usr/bin/g++  -Dmymuduo_EXPORTS   -g -std=c++11 -g -fPIC   -o CMakeFiles/mymuduo.dir/Channel.o -c /home/sbubuntu/Cpp_In_One/src/projects/mymuduo/Channel.cc",
+  "file": "/home/sbubuntu/Cpp_In_One/src/projects/mymuduo/Channel.cc"
+},
+{
+  "directory": "/home/sbubuntu/Cpp_In_One/build",
+  "command": "/usr/bin/g++  -Dmymuduo_EXPORTS   -g -std=c++11 -g -fPIC   -o CMakeFiles/mymuduo.dir/CurrentThread.o -c /home/sbubuntu/Cpp_In_One/src/projects/mymuduo/CurrentThread.cc",
+  "file": "/home/sbubuntu/Cpp_In_One/src/projects/mymuduo/CurrentThread.cc"
+},
+{
+  "directory": "/home/sbubuntu/Cpp_In_One/build",
+  "command": "/usr/bin/g++  -Dmymuduo_EXPORTS   -g -std=c++11 -g -fPIC   -o CMakeFiles/mymuduo.dir/DefaultPoller.o -c /home/sbubuntu/Cpp_In_One/src/projects/mymuduo/DefaultPoller.cc",
+  "file": "/home/sbubuntu/Cpp_In_One/src/projects/mymuduo/DefaultPoller.cc"
+},
+{
+  "directory": "/home/sbubuntu/Cpp_In_One/build",
+  "command": "/usr/bin/g++  -Dmymuduo_EXPORTS   -g -std=c++11 -g -fPIC   -o CMakeFiles/mymuduo.dir/EPollPoller.o -c /home/sbubuntu/Cpp_In_One/src/projects/mymuduo/EPollPoller.cc",
+  "file": "/home/sbubuntu/Cpp_In_One/src/projects/mymuduo/EPollPoller.cc"
+},
+{
+  "directory": "/home/sbubuntu/Cpp_In_One/build",
+  "command": "/usr/bin/g++  -Dmymuduo_EXPORTS   -g -std=c++11 -g -fPIC   -o CMakeFiles/mymuduo.dir/EventLoop.o -c /home/sbubuntu/Cpp_In_One/src/projects/mymuduo/EventLoop.cc",
+  "file": "/home/sbubuntu/Cpp_In_One/src/projects/mymuduo/EventLoop.cc"
+},
+{
+  "directory": "/home/sbubuntu/Cpp_In_One/build",
+  "command": "/usr/bin/g++  -Dmymuduo_EXPORTS   -g -std=c++11 -g -fPIC   -o CMakeFiles/mymuduo.dir/EventLoopThread.o -c /home/sbubuntu/Cpp_In_One/src/projects/mymuduo/EventLoopThread.cc",
+  "file": "/home/sbubuntu/Cpp_In_One/src/projects/mymuduo/EventLoopThread.cc"
+},
+{
+  "directory": "/home/sbubuntu/Cpp_In_One/build",
+  "command": "/usr/bin/g++  -Dmymuduo_EXPORTS   -g -std=c++11 -g -fPIC   -o CMakeFiles/mymuduo.dir/EventLoopThreadPool.o -c /home/sbubuntu/Cpp_In_One/src/projects/mymuduo/EventLoopThreadPool.cc",
+  "file": "/home/sbubuntu/Cpp_In_One/src/projects/mymuduo/EventLoopThreadPool.cc"
+},
+{
+  "directory": "/home/sbubuntu/Cpp_In_One/build",
+  "command": "/usr/bin/g++  -Dmymuduo_EXPORTS   -g -std=c++11 -g -fPIC   -o CMakeFiles/mymuduo.dir/InetAddress.o -c /home/sbubuntu/Cpp_In_One/src/projects/mymuduo/InetAddress.cc",
+  "file": "/home/sbubuntu/Cpp_In_One/src/projects/mymuduo/InetAddress.cc"
+},
+{
+  "directory": "/home/sbubuntu/Cpp_In_One/build",
+  "command": "/usr/bin/g++  -Dmymuduo_EXPORTS   -g -std=c++11 -g -fPIC   -o CMakeFiles/mymuduo.dir/Poller.o -c /home/sbubuntu/Cpp_In_One/src/projects/mymuduo/Poller.cc",
+  "file": "/home/sbubuntu/Cpp_In_One/src/projects/mymuduo/Poller.cc"
+},
+{
+  "directory": "/home/sbubuntu/Cpp_In_One/build",
+  "command": "/usr/bin/g++  -Dmymuduo_EXPORTS   -g -std=c++11 -g -fPIC   -o CMakeFiles/mymuduo.dir/Socket.o -c /home/sbubuntu/Cpp_In_One/src/projects/mymuduo/Socket.cc",
+  "file": "/home/sbubuntu/Cpp_In_One/src/projects/mymuduo/Socket.cc"
+},
+{
+  "directory": "/home/sbubuntu/Cpp_In_One/build",
+  "command": "/usr/bin/g++  -Dmymuduo_EXPORTS   -g -std=c++11 -g -fPIC   -o CMakeFiles/mymuduo.dir/TcpConnection.o -c /home/sbubuntu/Cpp_In_One/src/projects/mymuduo/TcpConnection.cc",
+  "file": "/home/sbubuntu/Cpp_In_One/src/projects/mymuduo/TcpConnection.cc"
+},
+{
+  "directory": "/home/sbubuntu/Cpp_In_One/build",
+  "command": "/usr/bin/g++  -Dmymuduo_EXPORTS   -g -std=c++11 -g -fPIC   -o CMakeFiles/mymuduo.dir/TcpServer.o -c /home/sbubuntu/Cpp_In_One/src/projects/mymuduo/TcpServer.cc",
+  "file": "/home/sbubuntu/Cpp_In_One/src/projects/mymuduo/TcpServer.cc"
+},
+{
+  "directory": "/home/sbubuntu/Cpp_In_One/build",
+  "command": "/usr/bin/g++  -Dmymuduo_EXPORTS   -g -std=c++11 -g -fPIC   -o CMakeFiles/mymuduo.dir/Thread.o -c /home/sbubuntu/Cpp_In_One/src/projects/mymuduo/Thread.cc",
+  "file": "/home/sbubuntu/Cpp_In_One/src/projects/mymuduo/Thread.cc"
+},
+{
+  "directory": "/home/sbubuntu/Cpp_In_One/build",
+  "command": "/usr/bin/g++  -Dmymuduo_EXPORTS   -g -std=c++11 -g -fPIC   -o CMakeFiles/mymuduo.dir/Timestamp.o -c /home/sbubuntu/Cpp_In_One/src/projects/mymuduo/Timestamp.cc",
+  "file": "/home/sbubuntu/Cpp_In_One/src/projects/mymuduo/Timestamp.cc"
+},
+{
+  "directory": "/home/sbubuntu/Cpp_In_One/build",
+  "command": "/usr/bin/g++  -Dmymuduo_EXPORTS   -g -std=c++11 -g -fPIC   -o CMakeFiles/mymuduo.dir/logger.o -c /home/sbubuntu/Cpp_In_One/src/projects/mymuduo/logger.cc",
+  "file": "/home/sbubuntu/Cpp_In_One/src/projects/mymuduo/logger.cc"
+}
+]
