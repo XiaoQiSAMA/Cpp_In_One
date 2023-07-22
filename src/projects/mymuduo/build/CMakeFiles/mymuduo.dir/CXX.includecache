@@ -309,6 +309,10 @@ EventLoopThreadPool.h
 /home/sbubuntu/Cpp_In_One/src/projects/mymuduo/EventLoopThreadPool.h
 Callbacks.h
 /home/sbubuntu/Cpp_In_One/src/projects/mymuduo/Callbacks.h
+TcpConnection.h
+/home/sbubuntu/Cpp_In_One/src/projects/mymuduo/TcpConnection.h
+Buffer.h
+/home/sbubuntu/Cpp_In_One/src/projects/mymuduo/Buffer.h
 functional
 -
 string
