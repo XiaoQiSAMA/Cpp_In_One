@@ -18,10 +18,14 @@ void RpcProvider::NotifyService(google::protobuf::Service *service) {
     // 获取服务方法的数量
     int methodCnt = pserviceDesc->method_count();
 
+    LOG_INFO("service name:%s", service_name.c_str());
+
     for (int i = 0; i < methodCnt; ++i) {
         // 获取了服务对象指定下标的服务方法的描述(抽象描述)
         const google::protobuf::MethodDescriptor* pmethodDesc = pserviceDesc->method(i);
         service_info.m_methodMap.insert({pmethodDesc->name(), pmethodDesc});
+
+        LOG_INFO("method name:%s", pmethodDesc->name().c_str());
     }
     service_info.m_service = service;
     m_serviceMap.insert({service_name, service_info});
