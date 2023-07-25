@@ -1,0 +1,2 @@
+15:57:14 => The first message
+15:57:14 => /home/sbubuntu/Cpp_In_One/src/projects/mprpc/example/callee/friendservice.cc:main:43
