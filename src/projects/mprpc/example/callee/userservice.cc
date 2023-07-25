@@ -1,5 +1,6 @@
 #include <iostream>
 #include <string>
+
 #include "user.pb.h"
 #include "mprpcapplication.h"
 #include "rpcprovider.h"
@@ -12,6 +13,12 @@ class UserService : public fixbug::UserServiceRpc { // 使用在rpc服务发布�
         bool Login(std::string name, std::string pwd) {
             std::cout << "Doing local service: Login " << std::endl;
             std::cout << "name : " << name << " pwd : " << pwd << std::endl;
+            return true;
+        }
+
+        bool Register(uint32_t id, std::string name, std::string pwd) {
+            std::cout << "Doing local service: Register " << std::endl;
+            std::cout << "id : " << id << " name : " << name << " pwd : " << pwd << std::endl;
             return true;
         }
 
@@ -39,6 +46,23 @@ class UserService : public fixbug::UserServiceRpc { // 使用在rpc服务发布�
             response->set_sucess(login_result);
 
             // 执行回调操作: 执行响应对象的序列化和网络发送(由框架完成)
+            done->Run();
+        }
+
+        void Register(::google::protobuf::RpcController* controller,
+                       const ::fixbug::RegisterRequest* request,
+                       ::fixbug::RegisterResponse* response,
+                       ::google::protobuf::Closure* done) {
+            uint32_t id = request->id();
+            std::string name = request->name();
+            std::string pwd = request->pwd();
+
+            bool ret = Register(id, name, pwd);
+
+            response->mutable_result()->set_errcode(0);
+            response->mutable_result()->set_errmsg("");
+            response->set_sucess(ret);
+
             done->Run();
         }
 };

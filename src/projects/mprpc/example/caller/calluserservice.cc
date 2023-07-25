@@ -29,5 +29,21 @@ int main(int argc, char **argv) {
         std::cout << "rpc login response error : " << response.result().errmsg() << std::endl;
     }
     
+    // 演示调用远程发布的rpc方法Register
+    fixbug::RegisterRequest req;
+    req.set_id(1111);
+    req.set_name("qiqi");
+    req.set_pwd("000000");
+
+    fixbug::RegisterResponse rsp;
+
+    stub.Register(nullptr, &req, &rsp, nullptr);
+    // 一次rpc调用完成，读调用的结果
+    if (rsp.result().errcode() == 0) {
+        std::cout << "rpc Register response success : " << rsp.sucess() << std::endl;
+    } else {
+        std::cout << "rpc Register response error : " << rsp.result().errmsg() << std::endl;
+    }
+
     return 0;
 }
