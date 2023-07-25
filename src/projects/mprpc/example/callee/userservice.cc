@@ -35,8 +35,8 @@ class UserService : public fixbug::UserServiceRpc { // 使用在rpc服务发布�
             fixbug::ResultCode* code = response->mutable_result();
             code->set_errcode(0);
             code->set_errmsg("");
+            // response->set_allocated_result(code);
             response->set_sucess(login_result);
-            response->set_allocated_result(code);
 
             // 执行回调操作: 执行响应对象的序列化和网络发送(由框架完成)
             done->Run();
